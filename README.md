@@ -1,5 +1,16 @@
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)](https://linuxserver.io)
 
+Added https://github.com/Blaok/nextcloud-inotifyscan to linuxserver nextcloud image
+inotify script modified to watch all users files and update nextcloud webui with occ scan.
+It automatically add all copied files directly (from samba share or locally with usb key)
+
+[linuxserverurl]: https://linuxserver.io
+[forumurl]: https://forum.linuxserver.io
+[ircurl]: https://www.linuxserver.io/irc/
+[podcasturl]: https://www.linuxserver.io/podcast/
+[appurl]: https://nextcloud.com/
+[hub]: https://hub.docker.com/r/linuxserver/nextcloud/
+
 The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring :-
 
  * regular and timely application updates

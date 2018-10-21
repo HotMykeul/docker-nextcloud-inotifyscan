@@ -6,3 +6,5 @@ chown abc:abc \
 	/data
 chown -R abc:abc  \
 	/var/lib/nginx
+chmod a+x /etc/init.d/inotify
+chmod a+x /usr/local/bin/nextcloud-inotifyscan
