@@ -1,3 +1,7 @@
+Added https://github.com/Blaok/nextcloud-inotifyscan to linuxserver nextcloud image
+inotify script modified to watch all users files and update nextcloud webui with occ scan.
+It automatically add all copied files directly (from samba share or locally with usb key)
+
 [linuxserverurl]: https://linuxserver.io
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/

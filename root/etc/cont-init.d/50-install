@@ -16,5 +16,9 @@ chown abc:abc -R \
 	"${NEXTCLOUD_PATH}"
 fi
 
+# run inotifyscan
+s6-setuidgid abc nohup /usr/local/bin/nextcloud-inotifyscan 0<&- &>/var/log/inotify.log &
+echo $! > /var/run/inotify.pid
+
 # set cronjob
 crontab /defaults/nextcloud

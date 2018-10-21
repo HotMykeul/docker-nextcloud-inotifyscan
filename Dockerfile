@@ -24,6 +24,8 @@ RUN \
 	zlib-dev && \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
+  	python2 \
+	inotify-tools \
 	curl \
 	ffmpeg \
 	libxml2 \
