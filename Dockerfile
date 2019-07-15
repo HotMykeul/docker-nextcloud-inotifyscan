@@ -94,7 +94,9 @@ RUN \
 	NEXTCLOUD_RELEASE=$(curl -s https://raw.githubusercontent.com/nextcloud/nextcloud.com/master/strings.php \
 	| awk -F\' '/VERSIONS_SERVER_FULL_STABLE/ {print $2;exit}'); \
  fi && \
- echo ${NEXTCLOUD_RELEASE} > /version.txt && \
+ echo "**** download nextcloud ****" && \
+ curl -o /app/nextcloud.tar.bz2 -L \
+	https://download.nextcloud.com/server/releases/nextcloud-${NEXTCLOUD_RELEASE}.tar.bz2 && \
  echo "**** cleanup ****" && \
  apk del --purge \
 	build-dependencies && \
